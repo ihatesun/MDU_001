@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-tgray-800 flex flex-col h-screen">
+    <header class="fixed w-full">
+        <nav class="bg-tgray-900 w-full h-12 border-b border-solid border-tgray-600 font-mono">
+            <div class="ml-4 flex h-full whitespace-nowrap">
+                <ul class="hidden list-none lg:flex xl:flex 2xl:flex">
+                    <li class="h-full dropdown">
+                        <a class="text-tgray-400 font-bold text-xs hover:bg-tgray-800 hover:text-tgray-100 flex flex-col h-full items-center px-4 justify-center"
+                            href="#">
+                            <svg width="18px" height="18px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                            </svg>
+                            <span>PREDMETI</span>
+                        </a>
+                        <div class="dropdown-content">
+                            <div class="flex flex-col p-4 justify-between bg-tgray-900 rounded-md">
+                                <a class="text-tgray-400 font-bold text-sm bg-tgray-900 hover:bg-tgray-800 hover:text-tgray-100 flex h-12 items-center justify-center px-4 rounded-full transition-colors duration-150"
+                                    href="#">Poslovna Statistika</a>
+                                <a class="text-tgray-400 font-bold text-sm bg-tgray-900 hover:bg-tgray-800 hover:text-tgray-100 flex h-12 items-center justify-center px-4 rounded-full transition-colors duration-150"
+                                    href="#">Projektovanje Baza Podataka</a>
+                                <a class="text-tgray-400 font-bold text-sm bg-tgray-900 hover:bg-tgray-800 hover:text-tgray-100 flex h-12 items-center justify-center px-4 rounded-full transition-colors duration-150"
+                                    href="#">Razvoj Internet Poslovnih Rešenja</a>
+                                <a class="text-tgray-400 font-bold text-sm bg-tgray-900 hover:bg-tgray-800 hover:text-tgray-100 flex h-12 items-center justify-center px-4 rounded-full transition-colors duration-150"
+                                    href="#">Veb Programiranje</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="h-full"><a
+                            class="text-tgray-400 font-bold  hover:bg-tgray-800 border-solid hover:text-tgray-100 flex flex-col h-full items-center px-4 justify-center"
+                            href="#">Link</a></li>
+                </ul>
+                <label
+                    class="text-tgray-400 text-xs hover:bg-tgray-800 hover:text-tgray-100 h-full items-center px-4 justify-center ml-auto flex 2xl:hidden xl:hidden lg:hidden"
+                    for="nav-menu-toggle">
+                    <svg width="24px" height="24px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </label>
+            </div>
+            <input class="hidden" id="nav-menu-toggle" type="checkbox">
+            <div class="w-full bg-tgray-900 p-4 border-b border-solid border-tgray-600">
+                <a class="text-tgray-400 font-bold text-xs hover:bg-tgray-800 hover:text-tgray-100 flex rounded-full h-12 items-center justify-center"
+                    href="#">
+                    <svg class="mr-3" width="18px" height="18px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                    </svg>
+                    <span>PREDMETI</span>
+                </a>
+                <a class="text-tgray-400 font-bold text-xs hover:bg-tgray-800 hover:text-tgray-100 flex rounded-full h-12 items-center justify-center"
+                    href="#">
+                    <svg class="mr-3" width="18px" height="18px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                    </svg>
+                    <span>PREDMETI</span>
+                </a>
+                <a class="text-tgray-400 font-bold text-xs hover:bg-tgray-800 hover:text-tgray-100 flex rounded-full h-12 items-center justify-center"
+                    href="#">
+                    <svg class="mr-3" width="18px" height="18px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                    </svg>
+                    <span>PREDMETI</span>
+                </a>
+            </div>
+        </nav>
+
+    </header>
+    <main class="flex-grow mt-12">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit odio corrupti sint hic earum sunt
+            consectetur, tempore quasi distinctio aut? Exercitationem sit sint expedita dolorem eum totam reprehenderit,
+            saepe eligendi.</p>
+    </main>
+    <footer class="bg-tgray-900 w-full h-12 flex-shrink-0 border-t border-solid border-tgray-600">
+        
+    </footer>
+</body>
+
+
+</html>
